@@ -1,10 +1,11 @@
-<h1>Cuisines</h1>
+<h1>Stylists</h1>
+<br>
 
-#foreach($cuisine in $cuisines)
- <h3><a href="/cuisines/$cuisine.getId()"> $cuisine.getName()</a></h3>
- <h4><a href="/cuisines/$cuisine.getId()/edit"> Edit Cuisine</a> </h4>
+<ul>
+#foreach($stylist in $stylists)
+ <li><h3><a href="/stylists/$stylist.getId()"> $stylist.getName()</a></h3><h4><a href="/stylist/$stylist.getId()/edit"> Edit Stylist</a></h4></li>
 #end
-
+</ul>
 
 
 <hr>
