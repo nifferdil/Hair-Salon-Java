@@ -2,9 +2,9 @@
 <ul>
 #foreach ($client in $stylist.getClients())
   #if($client.getClientName())
-    <li><h4>$restaurant.getRestName()</h4><h3><a href="/stylists/$stylist.getId()/$client.getId()/delete">Delete client</a></h3></li>
+<li><h3>$client.getClientName()</h3><h4><a href="/stylists/$stylist.getId()/$client.getId()/delete">Delete client</a></h4></li>
   #end
-  </ul>
+</ul>
 #end
 
 <hr/>

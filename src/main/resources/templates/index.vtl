@@ -26,11 +26,11 @@
   <p>Click on a stylist to see their clients:</p>
   <ul>
     #foreach($stylist in $stylists)
-      <li><h3><a href="/stylists/$stylist.getId() ">$stylist.getName()</a></h3><h4><a href="/stylists/$stylist.getId()/delete">Delete stylist</a><h4></li>
+    <li><h3><a href="/stylists/$stylist.getId() ">$stylist.getName()</a></h3><h4><a href="/stylists/$stylist.getId()/edit"> Edit Stylist</a></h4><h4><a href="/stylists/$stylist.getId()/delete">Delete stylist</a><h4></li>
     #end
   </ul>
 #else
   <p>There are no stylists yet!</p>
 #end
 <hr>
-<a href="/stylists">View all stylists</a>
+<h4><a href="/stylists">View all stylists</a></h4>
