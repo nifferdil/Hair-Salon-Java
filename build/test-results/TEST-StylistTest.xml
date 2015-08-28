@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StylistTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2015-08-28T19:21:54" hostname="Jen-Quiross-MacBook-Pro.local" time="0.641">
+  <properties/>
+  <testcase name="equals_returnsTrueIfNamesAretheSame" classname="StylistTest" time="0.037"/>
+  <testcase name="all_emptyAtFirst" classname="StylistTest" time="0.058"/>
+  <testcase name="find_findStylistInDatabase_true" classname="StylistTest" time="0.193"/>
+  <testcase name="getClients_retrievesAllClientsFromDatabase_clientsList" classname="StylistTest" time="0.152"/>
+  <testcase name="save_savesIntoDatabase_true" classname="StylistTest" time="0.194"/>
+  <system-out><![CDATA[7
+7
+7
+7
+7
+7
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
