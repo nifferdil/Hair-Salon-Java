@@ -60,10 +60,19 @@ public class ClientTest {
     assertEquals(savedClient.getStylistId(), myStylist.getId());
   }
 
+  @Test
+  public void update_updatesClientInDB() {
+    Client myClient = new Client("Derrick", 1);
+    myClient.save();
+    myClient.update("Derrick H");
+    assertEquals("Derrick H", Client.all().get(0).getClientName());
+   }
 
-
-
-
-
-
+   @Test
+   public void delete_deleteClientInDB_true() {
+    Client myClient = new Client("Maxine", 1);
+    myClient.save();
+    myClient.delete();
+    assertEquals(0, Client.all().size());
+   }
 }

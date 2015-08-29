@@ -47,6 +47,18 @@ public class StylistTest {
     assertTrue(myStylist.getClients().containsAll(Arrays.asList(clients)));
   }
 
+  @Test
+  public void delete_deleteStylist_true() {
+    Stylist myStylist = new Stylist("Maxine");
+    myStylist.delete();
+    assertEquals(0, Stylist.all().size());
+  }
 
-
+  @Test
+    public void update_updateStylistInDatabase() {
+    Stylist myStylist = new Stylist("Maxine");
+    myStylist.save();
+    myStylist.update("Maxine H");
+    assertEquals("Maxine H", Stylist.all().get(0).getName());
+    }
 }
