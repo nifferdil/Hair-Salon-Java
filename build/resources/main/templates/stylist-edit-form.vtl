@@ -1,7 +1,9 @@
 <h1> Edit stylist name: $stylist.getName() </h1>
-
+<br>
 <form action="/stylists/$stylist.getId()" method="post">
-  <label for="name">Stylist name</label>
+  <label for="name">Stylist name:</label>
   <input id="name" name="name" type="text" value="$stylist.getName()">
   <button type="submit" class="btn btn-success">Update Stylist name</button>
 </form>
+<br>
+<a href="/">Return to Home Page</a>

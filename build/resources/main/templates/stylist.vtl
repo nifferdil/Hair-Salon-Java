@@ -1,9 +1,12 @@
 <h3>Here are all the clients for this stylist:</h3>
 <ul>
 #foreach ($client in $stylist.getClients())
-  #if($client.getClientName())
-<li><h3>$client.getClientName()</h3><h4><a href="/stylists/$stylist.getId()/$client.getId()/delete">Delete client</a></h4></li>
-  #end
+#if($client.getClientName())
+<li><h3>$client.getClientName()</h3>
+  <h4><a href="/stylists/$stylist.getId()/$client.getId()/edit"> Edit client</a></h4>
+  <h4><a href="/stylists/$stylist.getId()/$client.getId()/delete"> Delete client</a></h4>
+</li>
+#end
 </ul>
 #end
 
